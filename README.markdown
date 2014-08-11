@@ -61,7 +61,7 @@ ps aux | grep -i logstash
 ... if started then stop it, as it needs to be configured properly:
 sudo service logstash stop
 
-sudo service logstash-web stop ... this is not needed
+sudo service logstash-web stop ... this service is not needed
 ... to stop logstash-web from starting on boot:
 sudo mv /etc/init/logstash-web.conf /etc/init/logstash-web.conf.ORIGINAL
 
