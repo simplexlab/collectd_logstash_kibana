@@ -53,6 +53,27 @@ sudo mv /etc/init/logstash-web.conf /etc/init/logstash-web.conf.ORIGINAL
 sudo service logstash stop
 ```
 
+### install collectd:
+```
+sudo apt-get install collectd
+sudo service collectd stop
+sudo nano /etc/collectd/collectd.conf
+- change these lines:
+Hostname "????"
+<Plugin network>
+	<Server "x.x.x.x" "25826">
+	</Server>
+</Plugin>
+
+<Plugin interface>
+	Interface "eth0"
+	IgnoreSelected false
+</Plugin>
+... this file is big and there lots of options, but the
+		included file in collectd/etc/collectd/collectd.conf
+		is a good start
+```
+
 ### install kibana:
 ```
 wget https://download.elasticsearch.org/kibana/kibana/kibana-3.1.0.tar.gz
