@@ -1,4 +1,4 @@
-# LOGM
+# collectd, elasticsearch, and kibana
 
 ***
 
