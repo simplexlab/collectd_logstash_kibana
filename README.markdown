@@ -57,11 +57,14 @@ wget https://download.elasticsearch.org/logstash/logstash/packages/debian/logsta
 sudo dpkg -i logstash_1.4.2-1-2c0f5a1_all.deb
 sudo dpkg -l logstash
 ps aux | grep -i logstash
+
 ... if started then stop it, as it needs to be configured properly:
 sudo service logstash-web stop ... we don't need this
+
 ... to stop logstash-web from starting on boot:
 sudo mv /etc/init/logstash-web.conf /etc/init/logstash-web.conf.ORIGINAL
 sudo service logstash stop
+
 ... config logstash for collectd:
 sudo cp logstash/etc/logstash/conf.d/*.conf /etc/logstash/conf.d/
 sudo chown root:root /etc/logstash/conf.d/*.conf
@@ -75,6 +78,7 @@ sudo apt-get install collectd
 ... it starts after install so stop it in order to configure it:
 sudo service collectd stop
 sudo nano /etc/collectd/collectd.conf
+
 - change these lines as appropriate for the installation server:
 Hostname "????"
 <Plugin network>
