@@ -1,4 +1,4 @@
-# collectd, elasticsearch, and kibana
+# Server performance stats
 
 ***
 
