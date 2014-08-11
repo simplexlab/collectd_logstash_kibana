@@ -74,8 +74,8 @@ sudo chown root:root /etc/logstash/conf.d/*.conf
 sudo nano /etc/logstash/conf.d/02_collectd_input.conf
 sudo nano /etc/logstash/conf.d/99_outputs.conf
 ```
-**note**: you may have many **input conf** files for logstash, perhaps you already have an
-input conf for syslogs ... and that's ok, as logstash can **listen** for many inputs
+**note**: it's ok to have many **input conf** files for logstash, perhaps
+there is already an input conf for **syslogs**
 
 ### install collectd:
 ```
