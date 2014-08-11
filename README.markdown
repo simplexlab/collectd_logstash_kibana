@@ -18,6 +18,7 @@ collectd, logstash, elasticsearch, and kibana.
 * Logstash 1.4.2 to receive data from collectd and store that into elasticsearch
 * Java 1.7.0_65
 * Elasticsearch 1.2.2+
+* Kibana 3.1.0+
 * optional: use Nginx as a proxy for Kibana
 
 ### install java:
