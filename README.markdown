@@ -21,7 +21,7 @@ collectd, logstash, elasticsearch, and kibana.
 * Kibana 3.1.0+
 * optional: use nginx/apache/other as a proxy between kibana and elasticsearch
 
-### install java:
+### install java, if not installed already:
 ```
 sudo apt-get install -y python-software-properties
 sudo add-apt-repository ppa:webupd8team/java
@@ -33,7 +33,7 @@ sudo update-alternatives --config javaws
 java -version
 ```
 
-### install elasticsearch:
+### install elasticsearch, if not installed already:
 ```
 wget https://download.elasticsearch.org/elasticsearch/elasticsearch/elasticsearch-1.2.2.deb
 sudo dpkg -i elasticsearch-1.2.2.deb
@@ -50,7 +50,7 @@ git clone https://github.com/cleesmith/collectd_logstash_kibana.git
 cd collectd_logstash_kibana
 ```
 
-### install logstash:
+### install logstash, if not installed already:
 ```
 java -version ... ensure java is installed before installing logstash
 wget https://download.elasticsearch.org/logstash/logstash/packages/debian/logstash_1.4.2-1-2c0f5a1_all.deb
@@ -94,7 +94,7 @@ Hostname "????"
 included file in collectd/etc/collectd/collectd.conf is a good start
 ```
 
-### install kibana:
+### install kibana, if not installed already:
 ```
 wget https://download.elasticsearch.org/kibana/kibana/kibana-3.1.0.tar.gz
 tar -xvzf kibana-3.1.0.tar.gz
