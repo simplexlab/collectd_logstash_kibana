@@ -71,8 +71,7 @@ Hostname "????"
 	IgnoreSelected false
 </Plugin>
 ... this file is big and there are lots of options, but the
-		included file in collectd/etc/collectd/collectd.conf
-		is a good start
+included file in collectd/etc/collectd/collectd.conf is a good start
 ```
 
 ### install kibana:
