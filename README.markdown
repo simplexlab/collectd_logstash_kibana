@@ -42,6 +42,13 @@ sudo service elasticsearch stop
 ps aux | grep -i elasticsearch
 ```
 
+### clone this github repo:
+```
+cd ~
+git clone https://github.com/cleesmith/collectd_logstash_kibana.git
+cd collectd_logstash_kibana
+```
+
 ### install logstash:
 ```
 java -version ... ensure java is installed before installing logstash
@@ -54,6 +61,11 @@ sudo service logstash-web stop ... we don't need this
 ... to stop logstash-web from starting on boot:
 sudo mv /etc/init/logstash-web.conf /etc/init/logstash-web.conf.ORIGINAL
 sudo service logstash stop
+... config logstash for collectd:
+sudo cp logstash/etc/logstash/conf.d/*.conf /etc/logstash/conf.d/
+sudo chown root:root /etc/logstash/conf.d/*.conf
+sudo nano /etc/logstash/conf.d/02_collectd_input.conf
+sudo nano /etc/logstash/conf.d/99_outputs.conf
 ```
 
 ### install collectd:
@@ -97,8 +109,8 @@ At this point, it's best to install nginx/apache/other as a web server for kiban
 
 Also, there are two kibana dashboard json files included in kibana/*.json, but only 
 the kibana/system_resources.json works properly as seen in this screenshot:
-![kibana](collectd_kibana_dashboard.png)
 
+![kibana](collectd_kibana_dashboard.png)
 
 ### optional: install a proxy between Kibana and Elasticsearch:
 >   * https://github.com/elasticsearch/kibana
