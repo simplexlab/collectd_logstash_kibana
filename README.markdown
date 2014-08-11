@@ -74,11 +74,11 @@ sudo chown root:root /etc/logstash/conf.d/*.conf
 sudo nano /etc/logstash/conf.d/02_collectd_input.conf
 sudo nano /etc/logstash/conf.d/99_outputs.conf
 ```
-**note**: it's ok to have many **input conf** files for logstash, for
+**Note**: it's ok to have many **input conf** files for logstash, for
 example there may already be an input conf file for **syslogs**.  
 Logstash can have many input, filter, and output conf files, just ensure 
 they are prefixed with an ascending number (i.e. the "02_" and "99_") 
-to keep them in order
+to keep them in order required by logstash (inputs then filters then outputs).
 
 ### install collectd:
 ```
