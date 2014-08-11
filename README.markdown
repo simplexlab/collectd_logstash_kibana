@@ -59,11 +59,11 @@ sudo dpkg -l logstash
 ps aux | grep -i logstash
 
 ... if started then stop it, as it needs to be configured properly:
-sudo service logstash-web stop ... we don't need this
+sudo service logstash stop
 
+sudo service logstash-web stop ... this is not needed
 ... to stop logstash-web from starting on boot:
 sudo mv /etc/init/logstash-web.conf /etc/init/logstash-web.conf.ORIGINAL
-sudo service logstash stop
 
 ... config logstash for collectd:
 sudo cp logstash/etc/logstash/conf.d/*.conf /etc/logstash/conf.d/
