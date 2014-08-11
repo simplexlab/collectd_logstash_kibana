@@ -134,4 +134,8 @@ the kibana/system_resources.json works properly as seen in this screenshot:
 >     * https://github.com/hmalphettes/kibana-proxy
 >     * https://github.com/fangli/kibana-authentication-proxy
 
+when viewed using sense the collectd docs look like this:
+
+![collectd](collectd_elasticsearch_docs.png)
+
 ***
