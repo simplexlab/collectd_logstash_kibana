@@ -70,7 +70,7 @@ Hostname "????"
 	Interface "eth0"
 	IgnoreSelected false
 </Plugin>
-... this file is big and there lots of options, but the
+... this file is big and there are lots of options, but the
 		included file in collectd/etc/collectd/collectd.conf
 		is a good start
 ```
