@@ -79,7 +79,7 @@ example there may already be an input conf file for **syslogs**.
 Logstash can have many input, filter, and output conf files, just ensure 
 they are prefixed with an ascending number (i.e. the "02_" and "99_") 
 to keep them in the order required by logstash (i.e. within the /etc/logstash/conf.d
-use lower numbers for inputs, followed by filters, and finally outputs).
+folder use lower numbers for input conf files, followed by filters, and finally outputs).
 
 ### install collectd:
 ```
