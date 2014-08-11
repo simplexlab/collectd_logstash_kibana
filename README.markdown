@@ -14,6 +14,7 @@ collectd, logstash, elasticsearch, and kibana.
 
 ### Required software
 * Ubuntu 12.04.4 LTS (probably works on 14.04 but this has not been tested)
+* Collectd 4.10.1-2.1ubuntu7 the statistics collection and monitoring daemon
 * Logstash 1.4.2 to receive data from collectd and store that into elasticsearch
 * Java 1.7.0_65
 * Elasticsearch 1.2.2+
