@@ -78,7 +78,7 @@ sudo nano /etc/logstash/conf.d/99_outputs.conf
 example there may already be an input conf file for **syslogs**.  
 Logstash can have many input, filter, and output conf files, just ensure 
 they are prefixed with an ascending number (i.e. the "02_" and "99_") 
-to keep them in the order required by logstash (inputs then filters then outputs).
+to keep them in the order required by logstash (i.e. inputs then filters then outputs).
 
 ### install collectd:
 ```
