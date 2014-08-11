@@ -57,7 +57,10 @@ wget https://download.elasticsearch.org/logstash/logstash/packages/debian/logsta
 sudo dpkg -i logstash_1.4.2-1-2c0f5a1_all.deb
 sudo dpkg -l logstash
 ps aux | grep -i logstash
+```
 
+### configure logstash for use with collectd:
+```
 ... if started then stop it, as it needs to be configured properly:
 sudo service logstash stop
 
