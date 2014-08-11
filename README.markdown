@@ -56,9 +56,10 @@ sudo service logstash stop
 ### install collectd:
 ```
 sudo apt-get install collectd
+... it starts after install so stop it in order to configure it:
 sudo service collectd stop
 sudo nano /etc/collectd/collectd.conf
-- change these lines:
+- change these lines as appropriate for the installation server:
 Hostname "????"
 <Plugin network>
 	<Server "x.x.x.x" "25826">
