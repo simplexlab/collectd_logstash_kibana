@@ -92,7 +92,8 @@ http://192.168.0.2:9200/ ... or whatever was set in /var/www/kibana/config.js
 
 At this point, it's best to install nginx/apache/other as a web server for kibana.
 
-Screenshot:
+Also, there are two kibana dashboard json files included in kibana/*.json, but only 
+the kibana/system_resources.json works properly as seen in this screenshot:
 ![kibana](collectd_kibana_dashboard.png)
 
 
