@@ -19,7 +19,7 @@ collectd, logstash, elasticsearch, and kibana.
 * Java 1.7.0_65
 * Elasticsearch 1.2.2+
 * Kibana 3.1.0+
-* optional: use nginx/apache/other as a proxy for kibana
+* optional: use nginx/apache/other as a proxy between kibana and elasticsearch
 
 ### install java:
 ```
